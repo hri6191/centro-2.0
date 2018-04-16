@@ -1,0 +1,39 @@
+<?php
+
+if (!defined('BASEPATH'))
+    exit('No direct script access allowed');
+
+class Acc_cashbook_ctrlr_all extends CI_Controller {
+
+    public function index() {
+        $data['title'] = 'Cashbook Report';
+        $data['company_name'] = $this->general->get_firm();
+        $data['main_content'] = 'accounts/cashbook_all';
+        $this->load->view('templates/standard', $data);
+    }
+
+    public function account_data() {
+        $account_datas = $this->general->get_data_wer('account_txn', 'from_or_to', 'cash_book');
+        $i = 1;
+        foreach ($account_datas as $account_data) {
+            if ($account_data->txn_type == 'receipt') {
+                $debit = $account_data->amount;
+                $credit = '';
+            } else {
+                $debit = '';
+                $credit = $account_data->amount;
+            }
+            $accounts[] = array('SI' => $account_data->id,
+                'Date' => $account_data->txn_date,
+                'Account' => $account_data->account_name,
+                'Narration' => $account_data->description,
+                'VoucherType' => $account_data->txn_type,
+                'Debit' => $debit,
+                'Credit' => $credit
+            );
+            $i++;
+        }
+        echo json_encode($accounts);
+    }
+
+}

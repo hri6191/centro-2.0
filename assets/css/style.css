@@ -1,0 +1,22 @@
+.textbox{
+   -moz-box-sizing: border-box !important;
+    background-color: #FFFFFF;
+    border: 1px solid #CCCCCC !important;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) inset !important;
+    color: rgba(0, 0, 0, 0.75);
+    display: block;
+    font-family: inherit;
+    font-size: 0.875rem;
+    height: 2.3125rem;
+    margin: 0 0 1rem;
+    padding: 0.5rem;
+    transition: box-shadow 0.45s ease 0s, border-color 0.45s ease-in-out 0s;
+    width: 100%;
+}
+
+h4
+{
+    color: #6606B0;
+    text-align: center;
+    text-transform: uppercase;
+}

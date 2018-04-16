@@ -1,0 +1,111 @@
+
+/*
+ * Hotel Erp version 1
+ * Copyright (c) 2013, Itmarkerz Technologies,(Pvt) 
+ * http://www.itmarkerz.co.in/
+ * Redistributions of files prohibited without permission
+ */
+
+/*****************************************************************
+
+ *
+ * @author      raj(arundev6372@gmail.com)
+ * @location        assets/css//style.css
+ ****************************************************************/
+  body {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background-color: #f5f5f5;
+      }
+.form-signin {
+        max-width: 300px;
+        padding: 19px 29px 29px;
+        margin: 0 auto 20px;
+        background-color: #fff;
+        border: 1px solid #e5e5e5;
+        -webkit-border-radius: 5px;
+           -moz-border-radius: 5px;
+                border-radius: 5px;
+        -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+           -moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+                box-shadow: 0 1px 2px rgba(0,0,0,.05);
+      }
+      .form-signin .form-signin-heading,
+      .form-signin .checkbox {
+        margin-bottom: 10px;
+      }
+      .form-signin input[type="text"],
+      .form-signin input[type="password"] {
+        font-size: 16px;
+        height: auto;
+        margin-bottom: 15px;
+        padding: 7px 9px;
+      }
+	  .bordered{border:1px solid #B3AFAF;border-bottom:none}
+	  .border-last{border:1px solid #B3AFAF;}
+		.search_box{width:89%; color:#820808;}
+		.search_button{width:100%; background-color:#3399FF; color:#FFFFFF; font-weight:bold; cursor:pointer;background-image: 	     -moz-linear-gradient(center top , #FFFFFF, #3399FF)}
+		#inner { float: right; width: 130px; color: blue }
+		.search-button {
+		  display: inline-block;
+		  width:100px !important;
+		  height:34px !important;
+		  border:1px solid #4682B4 !important;
+		  float:right;
+		  left:0px;
+		  top: -36px;
+		  background:-moz-linear-gradient(center top , #62C462, #51A351) !important;
+		}
+select{
+   border: 1px solid #4682B4;
+    border-radius: 4px 4px 4px 4px;
+    font-size: 14px;
+    margin-top: 3px;
+   /* width: 200px ;*/
+    padding: 4px;
+}
+.textbox
+{
+margin-top:3px;
+font-size:14px;
+-moz-border-radius: 4px;
+border-radius: 4px;
+padding:8px;
+min-width:200px ;
+border:1px solid #4682B4;
+}
+
+.no-space [class*="span"] {
+    margin-left: 0 !important;
+}
+
+.no-space {
+    margin-left:0 !important;
+}
+
+.time{
+	width:80px!important;	
+}
+#persons_no{
+	width:55px;
+}
+
+.bs-example{
+    	margin: 20px;
+}
+
+.btn btn-success btn-large{
+	width: 200px;
+	
+}
+
+.text_width{
+	width: 100px !important;  
+	
+}
+
+.ui-autocomplete{
+
+        height:400px;
+        overflow: scroll;
+    }

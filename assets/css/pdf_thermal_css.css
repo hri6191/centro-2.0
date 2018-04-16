@@ -1,0 +1,91 @@
+@page {
+    margin-left: 0cm;
+    margin-top: 0cm;
+    margin-bottom: 0cm;
+    margin-right: 0cm;
+}
+
+/*body {
+    font-family: cursive;
+    padding: .35in;
+    text-align: justify;
+    border: 1px solid #006699;
+}*/
+
+img {
+    width: 8.5in;
+    height: 11in;
+}
+
+#header table,
+#footer table {
+    width: 100%;
+    border-collapse: collapse;
+    border: none;
+}
+
+#header td,
+#footer td {
+    padding: 0;
+    width: 50%;
+}
+
+.page-number {
+    text-align: center;
+}
+
+.page-number:before {
+    content: "Page " counter(page);
+}
+
+/*hr {
+    page-break-after: always;
+    border: 0;
+}*/
+h3 {
+    padding: 0px;
+    margin: 1px;
+}
+
+.center {
+    text-align: center;
+}
+
+table.border>tbody>tr>td { 
+  border-right: 1px solid black;
+  padding: 0.5em;
+}
+
+.simple_table {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+table.simple_table>tbody>tr>td { 
+  border: 1px solid black;
+  padding: 0.5em;
+  text-align: center;
+}
+
+
+table.change_order_items { 
+  font-size: 8pt;
+  width: 100%;
+  //border-collapse: collapse;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+table.change_order_items>tbody { 
+  border: 1px solid black;
+}
+
+table.change_order_items>tbody>tr>th { 
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+}
+
+table.change_order_items>tbody>tr>td { 
+  border-right: 1px solid black;
+  padding: 0.3em;
+}
